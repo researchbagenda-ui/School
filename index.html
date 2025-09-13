@@ -2,36 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>School Website</title>
+    <title>Welcome to Our School</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; }
-        .container { max-width: 800px; margin: 40px auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);}
-        h1 { color: #2a5d84; }
-        ul { margin: 18px 0 28px 22px; }
-        li { margin-bottom: 10px; }
-        .section-title { color: #226476; margin-top: 24px; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f7fa; margin: 0; }
+        header { background: #204a87; color: #fff; padding: 30px 0; text-align: center; }
+        nav { background: #2e6eb8; padding: 10px 0; text-align: center; }
+        nav a { color: #fff; margin: 0 14px; text-decoration: none; font-weight: 500;}
+        nav a:hover { text-decoration: underline;}
+        section { max-width: 900px; margin: 32px auto; background: #fff; border-radius: 8px; padding: 28px; box-shadow: 0 2px 8px rgba(0,0,0,0.04);}
+        h2 { color: #204a87; margin-top: 0;}
+        .feature-list { list-style-type: disc; margin-left: 24px; }
+        .cta { background: #e8f0fe; padding: 20px; border-radius: 7px; margin-top: 20px; text-align: center;}
+        .cta a { color: #2e6eb8; text-decoration: none; font-weight: bold;}
+        .portal-links { margin-top: 20px; }
+        .portal-links a { display: inline-block; margin: 8px; padding: 10px 18px; background: #204a87; color: #fff; border-radius: 5px; text-decoration: none; font-weight: 500;}
+        .portal-links a:hover { background: #2e6eb8;}
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Our School Website</h1>
-        <p>
-            Our website aims to provide important school information, support student and parent engagement, assist with admissions, and enhance communication within the school community.
-        </p>
-        <h2 class="section-title">Work Plan & Website Features</h2>
-        <ul>
-            <li><strong>Communication:</strong> Share news, events, and announcements with students, parents, and teachers.</li>
-            <li><strong>Access to Learning Materials:</strong> Upload notes, homework, class timetables, or exam schedules for students to download.</li>
-            <li><strong>Student Portal:</strong> Allow students to log in, check their grades, attendance, and school fees.</li>
-            <li><strong>Online Admissions:</strong> Make it easier for new students to apply or register online.</li>
-            <li><strong>Showcasing the School:</strong> Highlight achievements, staff, and activities to attract new students or sponsors.</li>
-            <li><strong>Teacher Resources:</strong> Provide internal resources like lesson plans, training guides, or notices.</li>
-            <li><strong>Parent Engagement:</strong> Keep parents updated and involved in their child’s education.</li>
+    <header>
+        <h1>Welcome to Our School</h1>
+        <p>Empowering students, connecting families, supporting teachers.</p>
+    </header>
+    <nav>
+        <a href="#news">News & Announcements</a>
+        <a href="#student-portal">Student Portal</a>
+        <a href="#admissions">Admissions</a>
+        <a href="#resources">Resources</a>
+        <a href="#showcase">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="news">
+        <h2>Latest News & Announcements</h2>
+        <ul class="feature-list">
+            <li>School reopens for Term 3 on September 18th.</li>
+            <li>Parent-Teacher meeting scheduled for October 5th.</li>
+            <li>Congratulations to our Debate Team for winning the regional finals!</li>
+            <!-- You can dynamically load more announcements here -->
         </ul>
+    </section>
+
+    <section id="student-portal">
+        <h2>Student Portal</h2>
+        <div class="cta">
+            <p>Students can log in to view grades, attendance, fee status, and download class materials.</p>
+            <div class="portal-links">
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="admissions">
+        <h2>Online Admissions</h2>
+        <p>New students can apply and register online. Fill out the admission form and track your application status easily.</p>
+        <div class="cta">
+            <a href="/admissions">Start Application</a>
+        </div>
+    </section>
+
+    <section id="resources">
+        <h2>Resources & Downloads</h2>
+        <ul class="feature-list">
+            <li><a href="/notes">Class Notes</a></li>
+            <li><a href="/homework">Homework Assignments</a></li>
+            <li><a href="/timetable">Class Timetables</a></li>
+            <li><a href="/exams">Exam Schedules</a></li>
+            <li><a href="/teacher-resources">Teacher Resources</a></li>
+        </ul>
+    </section>
+
+    <section id="showcase">
+        <h2>About Us & Achievements</h2>
         <p>
-            Explore our website to learn more about our school, access resources, and stay connected!
+            Our school is dedicated to academic excellence and holistic development. We celebrate our students’ achievements, vibrant staff, and enriching activities.
         </p>
-    </div>
+        <ul class="feature-list">
+            <li>National Science Fair Winners 2025</li>
+            <li>Active drama and music clubs</li>
+            <li>Experienced, caring teachers and staff</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact & Parent Engagement</h2>
+        <p>Stay connected! Parents can get updates, reach teachers, and participate in school events.</p>
+        <div class="cta">
+            <a href="/contact">Contact Us</a>
+            <a href="/parent-portal">Parent Portal</a>
+        </div>
+    </section>
+    
+    <footer style="text-align:center; padding:20px; background:#204a87; color:#fff; margin-top:30px;">
+        &copy; 2025 Our School. All rights reserved.
+    </footer>
 </body>
 </html>
